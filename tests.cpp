@@ -20,3 +20,11 @@ TEST_CASE("isPrime Tests")
 	CHECK(isPrime(65) == false);
 	CHECK(isPrime(100) == false);
 }
+
+TEST_CASE("nextPrime Tests")
+{
+	CHECK(nextPrime(12) == 13);
+	CHECK(nextPrime(4) == 5);
+	CHECK(nextPrime(17) == 19);
+	CHECK(nextPrime(23) == 29);
+}
