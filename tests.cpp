@@ -11,3 +11,12 @@ TEST_CASE("isDivisibleBy Tests")
 	CHECK(isDivisibleBy(87, 6) == false);
 	CHECK(isDivisibleBy(34, 7) == false);
 }
+
+TEST_CASE("isPrime Tests")
+{
+	CHECK(isPrime(47) == true);
+	CHECK(isPrime(29) == true);
+	CHECK(isPrime(22) == false);
+	CHECK(isPrime(65) == false);
+	CHECK(isPrime(100) == false);
+}
