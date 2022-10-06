@@ -28,3 +28,11 @@ TEST_CASE("nextPrime Tests")
 	CHECK(nextPrime(17) == 19);
 	CHECK(nextPrime(23) == 29);
 }
+
+TEST_CASE("countPrimes Tests")
+{
+	CHECK(countPrimes(2, 13) == 6);
+	CHECK(countPrimes(4, 30) == 8);
+	CHECK(countPrimes(29, 56) == 7);
+}
+
