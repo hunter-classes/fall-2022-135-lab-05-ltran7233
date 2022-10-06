@@ -9,5 +9,6 @@ int main()
 	std::cout << "isPrime(13) is " << isPrime(13) << std::endl;
 	std::cout << "nextPrime(14) is " << nextPrime(14) << std::endl;
 	std::cout << "nextPrime(17) is " << nextPrime(17) << std::endl;
+	std::cout << "countPrimes(5, 12) is " << countPrimes(5, 12) << std::endl;
 	return 0;
 }

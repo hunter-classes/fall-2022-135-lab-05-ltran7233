@@ -35,3 +35,16 @@ int nextPrime(int n)
 	return nextNum;
 }
 
+int countPrimes(int a, int b)
+{
+	int amtOfPrimes = 0;
+	for (int i=a; i<=b; i++)
+	{
+		if (isPrime(i) == true)
+		{
+			amtOfPrimes++;
+		}
+	} 
+	return amtOfPrimes;
+}
+
