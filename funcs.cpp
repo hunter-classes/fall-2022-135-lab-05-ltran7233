@@ -24,3 +24,14 @@ bool isPrime(int n)
 	}
 	return true;
 }
+
+int nextPrime(int n)
+{
+	int nextNum = n+1;
+	while (isPrime(nextNum) == false)
+	{
+		nextNum++;
+	}
+	return nextNum;
+}
+

@@ -7,5 +7,7 @@ int main()
 	std::cout << "isDivisibleBy(35, 17) is " << isDivisibleBy(35, 17) << std::endl;
 	std::cout << "isPrime(2) is " << isPrime(2) << std::endl;
 	std::cout << "isPrime(13) is " << isPrime(13) << std::endl;
+	std::cout << "nextPrime(14) is " << nextPrime(14) << std::endl;
+	std::cout << "nextPrime(17) is " << nextPrime(17) << std::endl;
 	return 0;
 }
