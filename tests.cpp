@@ -17,8 +17,8 @@ TEST_CASE("isPrime Tests")
 	CHECK(isPrime(47) == true);
 	CHECK(isPrime(29) == true);
 	CHECK(isPrime(22) == false);
-	CHECK(isPrime(65) == false);
-	CHECK(isPrime(100) == false);
+	CHECK(isPrime(-10) == false);
+	CHECK(isPrime(1) == false);
 }
 
 TEST_CASE("nextPrime Tests")
@@ -39,7 +39,7 @@ TEST_CASE("countPrimes Tests")
 TEST_CASE("isTwinPrime Tests")
 {
 	CHECK(isTwinPrime(19) == true);
-	CHECK(isTwinPrime(2) == true);
-	CHECK(isTwinPrime(37) == false);
+	CHECK(isTwinPrime(5) == true);
+	CHECK(isTwinPrime(2) == false);
 	CHECK(isTwinPrime(47) == false);
 }
