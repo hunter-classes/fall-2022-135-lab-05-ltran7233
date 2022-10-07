@@ -48,3 +48,12 @@ int countPrimes(int a, int b)
 	return amtOfPrimes;
 }
 
+bool isTwinPrime(int n)
+{
+	if (isPrime(n-2)==true || isPrime(n+2)==true)
+	{
+		return true;
+	}
+	return false;
+}
+
