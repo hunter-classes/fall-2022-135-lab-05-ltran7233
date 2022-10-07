@@ -57,3 +57,13 @@ bool isTwinPrime(int n)
 	return false;
 }
 
+int nextTwinPrime(int n)
+{
+	int nextNum = nextPrime(n);
+	while (isTwinPrime(nextNum) == false)
+	{
+		nextNum++;
+	}
+	return nextNum; 
+}
+
