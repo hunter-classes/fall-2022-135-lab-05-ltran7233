@@ -51,3 +51,11 @@ TEST_CASE("nextTwinPrime Tests")
 	CHECK(nextTwinPrime(5) == 7);
 	CHECK(nextTwinPrime(13) == 17);
 }
+
+TEST_CASE("largestTwinPrime Tests")
+{
+	CHECK(largestTwinPrime(1, 31) == 31);
+	CHECK(largestTwinPrime(14, 16) == -1);
+	CHECK(largestTwinPrime(2, 14) == 13);
+	CHECK(largestTwinPrime(23, 24) == 23);
+}

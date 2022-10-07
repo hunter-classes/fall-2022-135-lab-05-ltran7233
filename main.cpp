@@ -12,5 +12,6 @@ int main()
 	std::cout << "countPrimes(5, 12) is " << countPrimes(5, 12) << std::endl;
 	std::cout << "isTwinPrime(17) is " << isTwinPrime(17) << std::endl;
 	std::cout << "nextTwinPrime(3) is " << nextTwinPrime(3) << std::endl;
+	std::cout << "largestTwinPrime(5, 18) is " << largestTwinPrime(5, 18) << std::endl;
 	return 0;
 }

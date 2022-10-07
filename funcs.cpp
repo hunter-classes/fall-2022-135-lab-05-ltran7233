@@ -71,3 +71,22 @@ int nextTwinPrime(int n) // task F
 	return nextNum; 
 }
 
+int largestTwinPrime(int a, int b) // task G
+{
+	int prime = -1;
+	for (int i=a; i<=b; i++)
+	{
+		if (isTwinPrime(i)==true)
+		{
+			prime = i;
+		}
+	}
+	if (prime != -1)
+	{
+		return prime;
+	}
+	else
+	{
+		return -1;
+	}
+}
