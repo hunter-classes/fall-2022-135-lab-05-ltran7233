@@ -43,3 +43,11 @@ TEST_CASE("isTwinPrime Tests")
 	CHECK(isTwinPrime(2) == false);
 	CHECK(isTwinPrime(47) == false);
 }
+
+TEST_CASE("nextTwinPrime Tests")
+{
+	CHECK(nextTwinPrime(7) == 11);
+	CHECK(nextTwinPrime(2) == 3);
+	CHECK(nextTwinPrime(5) == 7);
+	CHECK(nextTwinPrime(13) == 17);
+}

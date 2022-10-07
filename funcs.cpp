@@ -1,7 +1,7 @@
 #include <iostream>
 #include "funcs.h"
 
-bool isDivisibleBy(int n, int d)
+bool isDivisibleBy(int n, int d) // task A
 {
 	if (n%d == 0)
 	{
@@ -13,7 +13,7 @@ bool isDivisibleBy(int n, int d)
 	}
 }
 
-bool isPrime(int n)
+bool isPrime(int n) // task B
 {
 	if (n > 1)
 	{
@@ -29,7 +29,7 @@ bool isPrime(int n)
 	return false;
 }
 
-int nextPrime(int n)
+int nextPrime(int n) // task C
 {
 	int nextNum = n+1;
 	while (isPrime(nextNum) == false)
@@ -39,7 +39,7 @@ int nextPrime(int n)
 	return nextNum;
 }
 
-int countPrimes(int a, int b)
+int countPrimes(int a, int b) // task D
 {
 	int amtOfPrimes = 0;
 	for (int i=a; i<=b; i++)
@@ -52,7 +52,7 @@ int countPrimes(int a, int b)
 	return amtOfPrimes;
 }
 
-bool isTwinPrime(int n)
+bool isTwinPrime(int n) // task E
 {
 	if (isPrime(n-2)==true || isPrime(n+2)==true)
 	{
@@ -61,7 +61,7 @@ bool isTwinPrime(int n)
 	return false;
 }
 
-int nextTwinPrime(int n)
+int nextTwinPrime(int n) // task F
 {
 	int nextNum = nextPrime(n);
 	while (isTwinPrime(nextNum) == false)
