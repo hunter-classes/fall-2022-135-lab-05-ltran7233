@@ -16,14 +16,15 @@ TEST_CASE("isPrime Tests")
 {
 	CHECK(isPrime(47) == true);
 	CHECK(isPrime(29) == true);
-	CHECK(isPrime(22) == false);
+	CHECK(isPrime(0) == false);
 	CHECK(isPrime(-10) == false);
 	CHECK(isPrime(1) == false);
 }
 
 TEST_CASE("nextPrime Tests")
 {
-	CHECK(nextPrime(12) == 13);
+	CHECK(nextPrime(13) == 17);
+	CHECK(nextPrime(74) == 79);
 	CHECK(nextPrime(4) == 5);
 	CHECK(nextPrime(17) == 19);
 	CHECK(nextPrime(23) == 29);
@@ -33,7 +34,7 @@ TEST_CASE("countPrimes Tests")
 {
 	CHECK(countPrimes(2, 13) == 6);
 	CHECK(countPrimes(4, 30) == 8);
-	CHECK(countPrimes(29, 56) == 7);
+	CHECK(countPrimes(0, 7) == 4);
 }
 
 TEST_CASE("isTwinPrime Tests")

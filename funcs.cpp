@@ -19,7 +19,7 @@ bool isPrime(int n) // task B
 	{
 		for (int i=2; i<n; i++)
 		{
-			if (n%i == 0)
+			if (isDivisibleBy(n, i))
 			{
 				return false;
 			}
