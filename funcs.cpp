@@ -76,9 +76,12 @@ int largestTwinPrime(int a, int b) // task G
 	int prime = -1;
 	for (int i=a; i<=b; i++)
 	{
-		if (isTwinPrime(i)==true)
+		if (isPrime(i) == true)
 		{
-			prime = i;
+			if (isTwinPrime(i)==true)
+			{
+				prime = i;
+			}
 		}
 	}
 	if (prime != -1)
