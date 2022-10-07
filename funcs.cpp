@@ -54,6 +54,10 @@ int countPrimes(int a, int b) // task D
 
 bool isTwinPrime(int n) // task E
 {
+	if (isPrime(n)==false)
+	{
+		return false;
+	}
 	if (isPrime(n-2)==true || isPrime(n+2)==true)
 	{
 		return true;
